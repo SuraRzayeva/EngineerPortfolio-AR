@@ -5,7 +5,7 @@ import Context from '../store/Context'
 import Head from 'next/head'
 import SEOHead from '../components/SEOHead'
 
-const Resume = () => {
+const Resume = ({ image }) => {
   const { menuActive, setResumeActive, setAboutActive, setHomeActive, setProjectsActive, setContactActive, setMenuActive } = useContext(Context)
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Resume = () => {
         </div>
         <div className="intro-section">
           <div className="photo">
-            <img className="img" src="/svg/2.svg" alt="" />
+            <img className="img" src={image} alt="" />
           </div>
           <div className="intro-text">
             <p>
@@ -188,6 +188,13 @@ const Resume = () => {
       </div>
     </ResumeStyle>
   )
+}
+
+Resume.getInitialProps = () => {
+  const image = '/svg/2.svg'
+  return {
+    image: image,
+  }
 }
 
 export default Resume
