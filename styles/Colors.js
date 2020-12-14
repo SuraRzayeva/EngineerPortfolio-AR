@@ -1,0 +1,6 @@
+export const black = '#313131'
+export const teal = '#5DC1D1'
+export const tealOpa = 'rgb(93, 194, 209, .5)'
+export const lime = '#C6DB28'
+export const limeOpa = 'rgb(198, 219, 40, .5)'
+export const errorRed = '#e712a0'
