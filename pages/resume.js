@@ -2,10 +2,10 @@ import { ResumeStyle } from '../styles/pageStyles/ResumeStyle'
 import { useContext, useEffect } from 'react'
 import Link from 'next/link'
 import Context from '../store/Context'
-import Head from 'next/head'
+import Image from 'next/image'
 import SEOHead from '../components/SEOHead'
 
-const Resume = ({ image }) => {
+const Resume = () => {
   const { menuActive, setResumeActive, setAboutActive, setHomeActive, setProjectsActive, setContactActive, setMenuActive } = useContext(Context)
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Resume = ({ image }) => {
         </div>
         <div className="intro-section">
           <div className="photo">
-            <img className="img" src={image} alt="" />
+            <Image className="img" src="/svg/2.svg" alt="" width="100%" height="100%" />
           </div>
           <div className="intro-text">
             <p>
@@ -188,13 +188,6 @@ const Resume = ({ image }) => {
       </div>
     </ResumeStyle>
   )
-}
-
-Resume.getInitialProps = () => {
-  const image = '/svg/2.svg'
-  return {
-    image: image,
-  }
 }
 
 export default Resume
