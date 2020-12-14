@@ -2,8 +2,9 @@ import { ResumeStyle } from '../styles/pageStyles/ResumeStyle'
 import { useContext, useEffect } from 'react'
 import Link from 'next/link'
 import Context from '../store/Context'
-import Image from 'next/image'
+import Head from 'next/head'
 import SEOHead from '../components/SEOHead'
+import ResumeSvg from '../components/ResumeSvg'
 
 const Resume = () => {
   const { menuActive, setResumeActive, setAboutActive, setHomeActive, setProjectsActive, setContactActive, setMenuActive } = useContext(Context)
@@ -27,7 +28,7 @@ const Resume = () => {
         </div>
         <div className="intro-section">
           <div className="photo">
-            <Image className="img" src="/svg/2.svg" alt="" width="100%" height="100%" />
+            <ResumeSvg />
           </div>
           <div className="intro-text">
             <p>

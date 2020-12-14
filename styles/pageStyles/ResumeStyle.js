@@ -39,9 +39,12 @@ opacity: ${(props) => (props.menuActive ? '.5' : 1)};
             display: flex;
             justify-content: center;
             align-items: center;
-        
-            img {
-                width: 70%;         
+            svg {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;    
             }
         }
         .intro-text {
