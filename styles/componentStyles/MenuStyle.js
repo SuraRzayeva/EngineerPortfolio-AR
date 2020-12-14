@@ -68,7 +68,7 @@ box-shadow: 0 0 10px gray;
                 transition: .2s ease all;
             }
         }
-        li:hover img{
+        li:hover svg{
                 transform: translateY(-8px);
             }
         li:hover p:after{
