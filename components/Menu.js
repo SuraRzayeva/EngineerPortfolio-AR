@@ -2,6 +2,10 @@ import { MenuStyle } from '../styles/componentStyles/MenuStyle'
 import Link from 'next/link'
 import { useContext } from 'react'
 import Context from '../store/Context'
+import ResumeSvg from './ResumeSvg'
+import ContactSvg from './ContactSvg'
+import ProjectsSvg from './ProjectsSvg'
+import HomeSvg from './HomeSvg'
 
 const Menu = () => {
   const { menuActive, setMenuActive } = useContext(Context)
@@ -16,25 +20,25 @@ const Menu = () => {
         <ul>
           <Link href="/">
             <li onClick={closeMenu}>
-              <img src="/svg/1.svg" alt="" />
+              <HomeSvg />
               <p>Home</p>
             </li>
           </Link>
           <Link href="/resume">
             <li onClick={closeMenu}>
-              <img src="/svg/3.svg" alt="" />
+              <ResumeSvg />
               <p>Resume</p>
             </li>
           </Link>
           <Link href="/projects">
             <li onClick={closeMenu}>
-              <img src="/svg/4.svg" alt="" />
+              <ProjectsSvg />
               <p>Projects</p>
             </li>
           </Link>
           <Link href="/contact">
             <li onClick={closeMenu}>
-              <img src="/svg/2.svg" alt="" />
+              <ContactSvg />
               <p>Contact</p>
             </li>
           </Link>

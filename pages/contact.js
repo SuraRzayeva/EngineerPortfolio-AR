@@ -2,6 +2,7 @@ import { ContactStyle } from '../styles/pageStyles/ContactStyle'
 import { useContext, useEffect, useState } from 'react'
 import Context from '../store/Context'
 import SEOHead from '../components/SEOHead'
+import ContactSvg from '../components/ContactSvg'
 
 const Contact = () => {
   const { setHomeActive, setResumeActive, setProjectsActive, setAboutActive, setContactActive, setMenuActive, menuActive } = useContext(Context)
@@ -45,7 +46,7 @@ const Contact = () => {
         </div>
         <div className="intro-section">
           <div className="photo">
-            <img src="/svg/4.svg" alt="" />
+            <ContactSvg />
           </div>
           <div className="intro-text">
             <p>

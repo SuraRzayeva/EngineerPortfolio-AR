@@ -35,17 +35,17 @@ box-shadow: 0 0 10px gray;
         align-items: center;
 
         li {
-            width: 100%;
-            height: 25%;
+            width: 17%;
             display: flex;
             flex-direction: column;
-            margin: 7% 0;
+            margin: 6% 0;
             align-items: center;
             transition: .2s ease all;
             cursor: pointer;
+            justify-content: center;
 
-            img {
-                height: 80%;       
+            svg {
+                width: 100%;
                 transition: .1s ease all;    
             }
 
@@ -79,7 +79,20 @@ box-shadow: 0 0 10px gray;
 
 
 
-
+@media screen and (max-width: 850px) {
+    .container {  
+        ul {
+            li {
+                margin: 12% 0;
+                width: 30%;
+              
+                p {
+             
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 500px) {
@@ -87,9 +100,8 @@ box-shadow: 0 0 10px gray;
         ul {
             li {
                 margin: 20% 0;
-                img {
-                    width: 40%;
-                }
+                width: 50%;
+              
                 p {
                     font-size: 14px;
                 }
@@ -98,6 +110,21 @@ box-shadow: 0 0 10px gray;
     }
 }
 
+
+@media screen and (max-width: 350px) {
+    .container {  
+        ul {
+            li {
+                margin: 10% 0;
+                width: 40%;
+              
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 
 @keyframes showMenu {
     from {

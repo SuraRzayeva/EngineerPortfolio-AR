@@ -36,8 +36,12 @@ opacity: ${(props) => (props.menuActive ? '.5' : 1)};
             justify-content: center;
             align-items: center;
         
-            img {
-                width: 70%;         
+            svg {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;    
             }
         }
 
@@ -138,7 +142,7 @@ opacity: ${(props) => (props.menuActive ? '.5' : 1)};
                 align-items: center;
                 justify-content: center;
                 padding-top: 30px;
-                img {
+                svg {
                     width: 60%;
                 }
             }
@@ -196,7 +200,7 @@ opacity: ${(props) => (props.menuActive ? '.5' : 1)};
                 align-items: center;
                 justify-content: center;
                 padding-top: 30px;
-                img {
+                svg {
                     width: 60%;
                 }
             }

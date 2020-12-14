@@ -37,8 +37,12 @@ overflow-x: hidden;
             justify-content: center;
             align-items: center;
         
-            img {
-                width: 70%;         
+            svg {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;    
             }
         }
 
@@ -218,7 +222,7 @@ overflow-x: hidden;
                 align-items: center;
                 justify-content: center;
                 padding-top: 30px;
-                img {
+                svg {
                     width: 60%;
                 }
             }
@@ -263,7 +267,7 @@ overflow-x: hidden;
                 align-items: center;
                 justify-content: center;
                 padding-top: 30px;
-                img {
+                svg {
                     width: 60%;
                 }
             }

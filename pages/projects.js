@@ -1,7 +1,7 @@
 import { ProjectsStyle } from '../styles/pageStyles/ProjectsStyle'
 import { useContext, useEffect } from 'react'
 import Context from '../store/Context'
-import Head from 'next/head'
+import ProjectsSvg from '../components/ProjectsSvg'
 import SEOHead from '../components/SEOHead'
 
 const Projects = ({ img }) => {
@@ -29,7 +29,7 @@ const Projects = ({ img }) => {
         </div>
         <div className="intro-section">
           <div className="photo">
-            <img src={img} alt="" />
+            <ProjectsSvg />
           </div>
           <div className="intro-text">
             <p>

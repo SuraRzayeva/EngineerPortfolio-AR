@@ -165,7 +165,7 @@ opacity: ${(props) => (props.menuActive ? '.5' : 1)};
                 justify-content: center;
                 padding-top: 30px;
                 img {
-                    width: 60%;
+                    svg: 60%;
                 }
             }
 
@@ -256,7 +256,7 @@ opacity: ${(props) => (props.menuActive ? '.5' : 1)};
                 align-items: center;
                 justify-content: center;
                 padding-top: 30px;
-                img {
+                svg {
                     width: 60%;
                 }
             }
