@@ -19,8 +19,7 @@ animation: ${(props) => (props.menuActive ? 'showMenu .2s ease forwards;' : 'hid
 box-shadow: 0 0 10px gray;
 
 .container {
-    width: 80%;
-    height: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,15 +29,15 @@ box-shadow: 0 0 10px gray;
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
+        height: 80%;
         justify-content: space-around;
         align-items: center;
 
         li {
-            width: 17%;
+            width: 90px;
             display: flex;
             flex-direction: column;
-            margin: 6% 0;
+            margin: 30px;
             align-items: center;
             transition: .2s ease all;
             cursor: pointer;
@@ -47,6 +46,7 @@ box-shadow: 0 0 10px gray;
             svg {
                 width: 100%;
                 transition: .1s ease all;    
+                align-self: center;
             }
 
             p {
@@ -81,13 +81,19 @@ box-shadow: 0 0 10px gray;
 
 @media screen and (max-width: 850px) {
     .container {  
+        height: 100vh;
+        align-items: flex-start;
         ul {
+            height: 75%;
+            margin-top: 100px;
+            
             li {
-                margin: 12% 0;
-                width: 30%;
+                width: 90px;
+                margin: 30px;
+              
               
                 p {
-             
+                    font-size: 14px;
                 }
             }
         }
@@ -97,10 +103,16 @@ box-shadow: 0 0 10px gray;
 
 @media screen and (max-width: 500px) {
     .container {  
+        height: 100vh;
+        align-items: flex-start;
         ul {
+            height: 65%;
+            margin-top: 100px;
+            
             li {
-                margin: 20% 0;
-                width: 50%;
+                width: 40px;
+                margin: 30px;
+              
               
                 p {
                     font-size: 14px;
@@ -114,12 +126,12 @@ box-shadow: 0 0 10px gray;
 @media screen and (max-width: 350px) {
     .container {  
         ul {
-            li {
-                margin: 10% 0;
-                width: 40%;
-              
+       
+      
+            li {        
+                width: 30px;     
                 p {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }

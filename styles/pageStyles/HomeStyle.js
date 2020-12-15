@@ -4,6 +4,7 @@ import { black, teal, lime } from '../Colors'
 export const HomeStyle = Styled.div`
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   min-height: 100vh;
   opacity: ${(props) => (props.menuActive ? '.5' : 1)};
@@ -68,6 +69,28 @@ export const HomeStyle = Styled.div`
 
   }
 
+  @media screen and (max-width: 1300px) {
+    .hero-section {
+      .welcome {
+        font-size: 50px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .hero-section {
+      padding-left: 100px;
+      width: 60%;
+      .hey {
+        line-height: 200px;
+      }
+
+      .welcome {
+        font-size: 30px;
+      }
+    }
+  }
+
   @media screen and (max-width: 1000px) {
     .hero-section {
       padding-left: 60px;
@@ -80,6 +103,8 @@ export const HomeStyle = Styled.div`
       .welcome {
         font-size: 25px;
       }
+
+      
     }
   }
 
@@ -98,6 +123,12 @@ export const HomeStyle = Styled.div`
         .text {
           font-size: 12px;
           line-height: 18px;
+        }
+
+        .cta {
+          width: 40%;
+          height: 35px;
+          font-size: 14px;
         }
       }
 

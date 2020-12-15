@@ -79,6 +79,11 @@ export const HeadingStyle = Styled.div`
   }
 
 
+  @media screen and (max-width: 800px) {
+    padding: 40px 60px;
+  
+  }
+
   @media screen and (max-width: 500px) {
       padding: 0;
       padding-top: 40px;

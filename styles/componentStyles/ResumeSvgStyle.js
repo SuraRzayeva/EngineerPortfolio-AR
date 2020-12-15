@@ -2,7 +2,10 @@ import Styled from 'styled-components'
 
 export const ResumeSvgStyle = Styled.div`
 
+
+
 svg {
+
     .cls-1{
         fill:#75d1d1;
     }

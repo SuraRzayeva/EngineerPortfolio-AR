@@ -10,7 +10,7 @@ export const RobotStyle = styled.div`
   align-items: center;
 
   svg {
-    width: 40%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,6 +86,18 @@ export const RobotStyle = styled.div`
     }
     100% {
       transform: scaleY(1);
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    svg {
+      width: 35%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    svg {
+      width: 38%;
     }
   }
 `
