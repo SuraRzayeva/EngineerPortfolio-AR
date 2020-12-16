@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <HomeStyle menuActive={menuActive}>
-      <SEOHead title="Altun Rzayev - Aeronautical Engineer" />
+      <SEOHead title="Altun Rzayev - Aeronautical Engineer" description="Will set a description later" />
       <div className="hero-section" onClick={() => (menuActive ? setMenuActive(false) : null)}>
         <h1 className="hey">Hey,</h1>
         <h3 className="welcome">Welcome to my spaceship!</h3>
